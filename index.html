@@ -9,40 +9,33 @@
     <header>
       <h1>Pesquisa Online</h1>
       <form action="" method="get">
-        <!--  <fieldset>
-           DADOS PESSOAIS 
+        <!-- DADOS PESSOAIS  -->
 
-          <legend>Dados Pessoais</legend>
-          <label for="userName">Nome:</label>
-          <input type="text" name="userName" required /><br />
+        <legend>Dados Pessoais</legend>
+        <label for="userName">Nome:</label>
+        <input type="text" name="userName" required /><br />
 
-          <label for="userAge">Idade:</label>
-          <input
-            type="number"
-            name="userAge"
-            min="12"
-            max="100"
-            required
-          /><br />
+        <label for="userAge">Idade:</label>
+        <input type="number" name="userAge" min="12" max="100" required /><br />
 
-          <label for="userBirthDate">Data de Nascimento:</label>
-          <input type="date" name="userBirthDate" /><br />
+        <label for="userBirthDate">Data de Nascimento:</label>
+        <input type="date" name="userBirthDate" /><br />
 
-          <label for="userEmail">Email</label>
-          <input type="email" name="userEmail" required /><br />
+        <label for="userEmail">Email</label>
+        <input type="email" name="userEmail" required /><br />
 
-          <label for="userPhoneNumber">Telefone:</label>
-          <input
-            type="tel"
-            name="userPhoneNumber"
-            pattern="[0-9]{11}"
-            placeholder="ex: (DDD)+numbers "
-          />
-          <br />
-
+        <label for="userPhoneNumber">Telefone:</label>
+        <input
+          type="tel"
+          name="userPhoneNumber"
+          pattern="[0-9]{11}"
+          placeholder="ex: (DDD)+numbers "
+        />
+        <br />
+        <fieldset>
           <label for="userUploadImage">Imagem:</label>
           <input type="file" accept="image/*" name="userUploadImage" /> <br />
-        </fieldset> 
+        </fieldset>
         <fieldset>
           <legend>Perfil</legend>
           <p>Gênero:</p>
@@ -62,10 +55,10 @@
             <option value="separado">Separado(a)</option>
             <option value="viuvo">Viúvo(a)</option>
           </select>
-          
-        </fieldset> -->
+        </fieldset>
+
         <label for="useState">Estado:</label>
-        <select name="userState">
+        <select name="userState" required>
           <option value="acre">Acre</option>
           <option value="lagoas">lagoas</option>
           <option value="amapa">Amapá</option>
@@ -94,6 +87,8 @@
           <option value="sergipe">Sergipe</option>
           <option value="tocantis">Tocantins</option>
         </select>
+        <label for="userCity">Cidade:</label>
+        <input type="text" placeholder="Digite a sua cidade" />
 
         <button type="submit">Enviar</button>
       </form>
