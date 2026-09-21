@@ -55,46 +55,57 @@
             <option value="separado">Separado(a)</option>
             <option value="viuvo">Viúvo(a)</option>
           </select>
+
+          <label for="useState">Estado:</label>
+          <select name="userState" required>
+            <option value="acre">Acre</option>
+            <option value="lagoas">lagoas</option>
+            <option value="amapa">Amapá</option>
+            <option value="amazonas">Amazonas</option>
+            <option value="bahia">Bahia</option>
+            <option value="ceara">Ceará</option>
+            <option value="distritoFederal">Distrito Federal</option>
+            <option value="espiritoSanto">Espírito Santo</option>
+            <option value="goias">Goiás</option>
+            <option value="maranhao">Maranhão</option>
+            <option value="matoGrosso">Mato Grosso</option>
+            <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+            <option value="minasGerais">Minas Gerais</option>
+            <option value="para">Pará</option>
+            <option value="paraiba">Paraíba</option>
+            <option value="parana">Paraná</option>
+            <option value="pernambuco">Pernambuco</option>
+            <option value="piaui">Piauí</option>
+            <option value="rioDeJaneiro">Rio de Janeiro</option>
+            <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+            <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+            <option value="rondonia">Rondônia</option>
+            <option value="roraima">Roraima</option>
+            <option value="santaCatarina">Santa Catarina</option>
+            <option value="saoPaulo">São Paulo</option>
+            <option value="sergipe">Sergipe</option>
+            <option value="tocantis">Tocantins</option>
+          </select>
+          <label for="userCity">Cidade:</label>
+          <input
+            type="text"
+            id="userCity"
+            autocomplete="address-level2"
+            placeholder="Ex.:Frotaleza"
+          />
         </fieldset>
-
-        <label for="useState">Estado:</label>
-        <select name="userState" required>
-          <option value="acre">Acre</option>
-          <option value="lagoas">lagoas</option>
-          <option value="amapa">Amapá</option>
-          <option value="amazonas">Amazonas</option>
-          <option value="bahia">Bahia</option>
-          <option value="ceara">Ceará</option>
-          <option value="distritoFederal">Distrito Federal</option>
-          <option value="espiritoSanto">Espírito Santo</option>
-          <option value="goias">Goiás</option>
-          <option value="maranhao">Maranhão</option>
-          <option value="matoGrosso">Mato Grosso</option>
-          <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
-          <option value="minasGerais">Minas Gerais</option>
-          <option value="para">Pará</option>
-          <option value="paraiba">Paraíba</option>
-          <option value="parana">Paraná</option>
-          <option value="pernambuco">Pernambuco</option>
-          <option value="piaui">Piauí</option>
-          <option value="rioDeJaneiro">Rio de Janeiro</option>
-          <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
-          <option value="rioGrandeDoSul">Rio Grande do Sul</option>
-          <option value="rondonia">Rondônia</option>
-          <option value="roraima">Roraima</option>
-          <option value="santaCatarina">Santa Catarina</option>
-          <option value="saoPaulo">São Paulo</option>
-          <option value="sergipe">Sergipe</option>
-          <option value="tocantis">Tocantins</option>
-        </select>
-        <label for="userCity">Cidade:</label>
-        <input
-          type="text"
-          id="userCity"
-          autocomplete="address-level2"
-          placeholder="Ex.:Frotaleza"
-        />
-
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes sociais</p>
+          <input type="checkbox" value="instagram" name="social" />
+          <label for="social ">Instagram</label> <br />
+          <input type="checkbox" value="youtube" name="social" />
+          <label for="social">Youtube</label> <br />
+          <input type="checkbox" value="facebook" name="social" />
+          <label for="social ">Facebook</label> <br />
+          <input type="checkbox" value="x" name="social" />
+          <label for="social">X</label>
+        </fieldset>
         <button type="submit">Enviar</button>
       </form>
     </header>
