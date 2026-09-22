@@ -12,20 +12,28 @@
         <!-- DADOS PESSOAIS  -->
 
         <legend>Dados Pessoais</legend>
-        <label for="userName">Nome:</label>
-        <input type="text" name="userName" required /><br />
+        <label for="Name">Nome:</label>
+        <input id="Name" type="text" name="userName" required /><br />
 
-        <label for="userAge">Idade:</label>
-        <input type="number" name="userAge" min="12" max="100" required /><br />
-
-        <label for="userBirthDate">Data de Nascimento:</label>
-        <input type="date" name="userBirthDate" /><br />
-
-        <label for="userEmail">Email</label>
-        <input type="email" name="userEmail" required /><br />
-
-        <label for="userPhoneNumber">Telefone:</label>
+        <label for="Age">Idade:</label>
         <input
+          id="Age"
+          type="number"
+          name="userAge"
+          min="12"
+          max="100"
+          required
+        /><br />
+
+        <label for="BirthDate">Data de Nascimento:</label>
+        <input id="BirthDate" type="date" name="userBirthDate" /><br />
+
+        <label for="Email">Email</label>
+        <input id="Email" type="email" name="userEmail" required /><br />
+
+        <label for="PhoneNumber">Telefone:</label>
+        <input
+          id="PhoneNumber"
           type="tel"
           name="userPhoneNumber"
           pattern="[0-9]{11}"
@@ -33,21 +41,36 @@
         />
         <br />
         <fieldset>
-          <label for="userUploadImage">Imagem:</label>
-          <input type="file" accept="image/*" name="userUploadImage" /> <br />
+          <label for="Image">Imagem:</label>
+          <input
+            id="Image"
+            type="file"
+            accept="image/*"
+            name="userUploadImage"
+          />
+          <br />
         </fieldset>
         <fieldset>
           <legend>Perfil</legend>
           <p>Gênero:</p>
-          <input type="radio" name="userGender" value="feminino" />
-          <label for="userGender">Feminino</label>
-          <input type="radio" name="userGender" value="Masculino" />
-          <label for="userGender">Masculino</label>
-          <input type="radio" name="userGender" value="notInformed" />
-          <label for="userGender">Prefiro não informar</label> <br />
+          <input id=" Female" type="radio" name="userGender" value="feminino" />
 
-          <label for="userMaritalStatus">Estado Civil</label>
-          <select name="userMaritalStatus">
+          <label for="Female">Feminino</label>
+
+          <input id=" Male" type="radio" name="userGender" value="Masculino" />
+
+          <label for=" Male">Masculino</label>
+
+          <input
+            id=" NotInformed"
+            type="radio"
+            name="userGender"
+            value="notInformed"
+          />
+          <label for=" NotInformed">Prefiro não informar</label> <br />
+
+          <label for=" MaritalStatus">Estado Civil</label>
+          <select id="MaritalStatus" name="userMaritalStatus">
             <option value="notSelect">Selecione:</option>
             <option value="solteiro">Solteiro(a)</option>
             <option value="casado">Casado(a)</option>
@@ -56,8 +79,8 @@
             <option value="viuvo">Viúvo(a)</option>
           </select>
 
-          <label for="useState">Estado:</label>
-          <select name="userState" required>
+          <label for="State">Estado:</label>
+          <select id="State" name="userState" required>
             <option value="acre">Acre</option>
             <option value="lagoas">lagoas</option>
             <option value="amapa">Amapá</option>
@@ -86,10 +109,10 @@
             <option value="sergipe">Sergipe</option>
             <option value="tocantis">Tocantins</option>
           </select>
-          <label for="userCity">Cidade:</label>
+          <label for=" City">Cidade:</label>
           <input
             type="text"
-            id="userCity"
+            id="City"
             autocomplete="address-level2"
             placeholder="Ex.:Frotaleza"
           />
@@ -97,14 +120,45 @@
         <fieldset>
           <legend>Hábitos</legend>
           <p>Redes sociais</p>
-          <input type="checkbox" value="instagram" name="social" />
-          <label for="social ">Instagram</label> <br />
-          <input type="checkbox" value="youtube" name="social" />
-          <label for="social">Youtube</label> <br />
-          <input type="checkbox" value="facebook" name="social" />
-          <label for="social ">Facebook</label> <br />
-          <input type="checkbox" value="x" name="social" />
-          <label for="social">X</label>
+          <input
+            type="checkbox"
+            value="instagram"
+            name="social"
+            id="social-instagram"
+          />
+          <label for="social-instagram">Instagram</label> <br />
+          <input
+            type="checkbox"
+            value="youtube"
+            name="social"
+            id="social-youtube"
+          />
+          <label for="social-youtube">Youtube</label> <br />
+          <input
+            type="checkbox"
+            value="facebook"
+            name="social"
+            id="social-facebook"
+          />
+          <label for="social-facebook">Facebook</label> <br />
+          <input type="checkbox" value="x" name="social" id="social-x" />
+          <label for="social-x">X <br /></label>
+          <label for="musicStyle">Estilo musical:</label>
+          <input
+            type="text"
+            id="musicStyle"
+            list="styleTypes"
+            name="userMusicStyle"
+          />
+          <datalist id="styleTypes">
+            <option value="Rock"></option>
+            <option value="Sertanejo"></option>
+            <option value="Pop"></option>
+            <option value="Internacional"></option>
+            <option value="Mpb"></option>
+          </datalist>
+          <label for="favoriteColor">Cor favorita:</label>
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
         <button type="submit">Enviar</button>
       </form>
