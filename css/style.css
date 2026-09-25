@@ -75,3 +75,28 @@ input[type="color"] {
   width: 40px;
   padding: 0;
 }
+input[type="text"]:invalid,
+input[type="number"]:invalid {
+  border-color: rgb(114, 11, 11);
+}
+input[type="text"]:valid,
+input[type="number"]:valid {
+  border-color: rgb(125, 214, 125);
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: rgba(20, 81, 20, 0.815);
+  color: #ffffff;
+}
+button[type="reset"]:hover {
+  background-color: rgba(83, 4, 28, 0.864);
+  color: #ffffff;
+}
