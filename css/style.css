@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fontes/Fjalla_One/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fontes/Work_Sans/static/WorkSans-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Work Sans", "sans-serif";
+}
+h1 {
+  font-family: "Fjlla One", "sans-serif";
+}
