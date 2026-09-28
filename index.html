@@ -44,10 +44,15 @@
               name="userPhoneNumber"
               pattern="[0-9]{11}"
               placeholder="ex: (DDD)+numbers "
+              aria-describedby="phoneHelp"
             />
+            <small id="phoneHelp"
+              >Preencha com 11 dígitos com o formato DDD + número sem espaços ou
+              hífens</small
+            >
             <br />
           </fieldset>
-          <fieldset>
+          <fieldset legend="Imagem">
             <label for="Image">Imagem:</label>
             <input
               id="Image"
@@ -173,7 +178,7 @@
             <label for="favoriteColor">Cor favorita:</label>
             <input type="color" name="userFavoriteColor" id="favoriteColor" />
           </fieldset>
-          <fieldset>
+          <fieldset legend="Avaliação">
             <p>Sua avaliação da Pesquisa Culturama:</p>
             <input type="radio" name="avaliacao" id="Otima" value="ótima" />
             <label for="Otima">Ótima</label>
