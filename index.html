@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <link rel="stylesheet" href="css/style.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="Icon" href="culturama-favico.png" />
@@ -12,38 +13,40 @@
       <header>
         <img src="img/logo-culturama.png" alt="Logo da Pesquisa culturama" />
         <h1>Pesquisa de opinião</h1>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
           <!-- DADOS PESSOAIS  -->
 
-          <legend>Dados Pessoais</legend>
-          <label for="Name">Nome:</label>
-          <input id="Name" type="text" name="userName" required /><br />
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="Name">Nome:</label>
+            <input id="Name" type="text" name="userName" required /><br />
 
-          <label for="Age">Idade:</label>
-          <input
-            id="Age"
-            type="number"
-            name="userAge"
-            min="12"
-            max="100"
-            required
-          /><br />
+            <label for="Age">Idade:</label>
+            <input
+              id="Age"
+              type="number"
+              name="userAge"
+              min="12"
+              max="100"
+              required
+            /><br />
 
-          <label for="BirthDate">Data de Nascimento:</label>
-          <input id="BirthDate" type="date" name="userBirthDate" /><br />
+            <label for="BirthDate">Data de Nascimento:</label>
+            <input id="BirthDate" type="date" name="userBirthDate" /><br />
 
-          <label for="Email">Email</label>
-          <input id="Email" type="email" name="userEmail" required /><br />
+            <label for="Email">Email</label>
+            <input id="Email" type="email" name="userEmail" required /><br />
 
-          <label for="PhoneNumber">Telefone:</label>
-          <input
-            id="PhoneNumber"
-            type="tel"
-            name="userPhoneNumber"
-            pattern="[0-9]{11}"
-            placeholder="ex: (DDD)+numbers "
-          />
-          <br />
+            <label for="PhoneNumber">Telefone:</label>
+            <input
+              id="PhoneNumber"
+              type="tel"
+              name="userPhoneNumber"
+              pattern="[0-9]{11}"
+              placeholder="ex: (DDD)+numbers "
+            />
+            <br />
+          </fieldset>
           <fieldset>
             <label for="Image">Imagem:</label>
             <input
@@ -58,7 +61,7 @@
             <legend>Perfil</legend>
             <p>Gênero:</p>
             <input
-              id=" Female"
+              id="Female"
               type="radio"
               name="userGender"
               value="feminino"
@@ -66,24 +69,19 @@
 
             <label for="Female">Feminino</label>
 
-            <input
-              id=" Male"
-              type="radio"
-              name="userGender"
-              value="Masculino"
-            />
+            <input id="Male" type="radio" name="userGender" value="Masculino" />
 
-            <label for=" Male">Masculino</label>
+            <label for="Male">Masculino</label>
 
             <input
-              id=" NotInformed"
+              id="NotInformed"
               type="radio"
               name="userGender"
               value="notInformed"
             />
-            <label for=" NotInformed">Prefiro não informar</label> <br />
+            <label for="NotInformed">Prefiro não informar</label> <br />
 
-            <label for=" MaritalStatus">Estado Civil</label>
+            <label for="MaritalStatus">Estado Civil</label>
             <select id="MaritalStatus" name="userMaritalStatus">
               <option value="notSelect">Selecione:</option>
               <option value="solteiro">Solteiro(a)</option>
@@ -123,7 +121,7 @@
               <option value="sergipe">Sergipe</option>
               <option value="tocantis">Tocantins</option>
             </select>
-            <label for=" City">Cidade:</label>
+            <label for="City" name="City">Cidade:</label>
             <input
               type="text"
               id="City"
@@ -156,7 +154,7 @@
             />
             <label for="social-facebook">Facebook</label> <br />
             <input type="checkbox" value="x" name="social" id="social-x" />
-            <label for="social-x">X <br /></label>
+            <label for="social-x">X </label><br />
             <label for="musicStyle">Estilo musical:</label>
             <input
               type="text"
@@ -177,16 +175,16 @@
           </fieldset>
           <fieldset>
             <p>Sua avaliação da Pesquisa Culturama:</p>
-            <input type="radio" name="avaliacao" id="Otima" />
+            <input type="radio" name="avaliacao" id="Otima" value="ótima" />
             <label for="Otima">Ótima</label>
             <br />
-            <input type="radio" name="avaliacao" id="Boa" />
+            <input type="radio" name="avaliacao" id="Boa" value="boa" />
             <label for="Boa">Boa</label>
             <br />
-            <input type="radio" name="avaliacao" id="Regular" />
+            <input type="radio" name="avaliacao" id="Regular" value="regular" />
             <label for="Regular">Regualar</label>
             <br />
-            <input type="radio" name="avaliacao" id="Ruim" />
+            <input type="radio" name="avaliacao" id="Ruim" value="ruim" />
             <label for="Ruim">Ruim</label>
 
             <br />
@@ -207,17 +205,15 @@
               required
             />
             <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+            <br />
 
             <input
               type="checkbox"
               name="userGetResult"
               id="getResult"
               value="accepted"
-              required
             />
-            <label for="userLgpdTerm"
-              >Desejo receber o resultado por email</label
-            >
+            <label for="getResult">Desejo receber o resultado por email</label>
           </fieldset>
           <button type="submit">Enviar</button>
           <button type="reset">Limpar dados</button>
