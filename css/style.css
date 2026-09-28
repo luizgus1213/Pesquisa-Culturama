@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fontes/Fjalla_One/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fontes/Work_Sans/static/WorkSans-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+img {
+  width: 100px;
+}
+h1 {
+  font-family: "Fjalla One", "sans-serif";
+}
+body {
+  background-color: white;
+  font-family: "Work Sans", "sans-serif";
+}
+form {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+fieldset {
+  padding: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+legend {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 5px;
+}
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+textarea {
+  min-height: 100px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="color"] {
+  width: 40px;
+  padding: 0;
+}
+input[type="text"]:invalid,
+input[type="number"]:invalid {
+  border-color: rgb(114, 11, 11);
+}
+input[type="text"]:valid,
+input[type="number"]:valid {
+  border-color: rgb(125, 214, 125);
+}
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: rgba(20, 81, 20, 0.815);
+  color: #ffffff;
+}
+button[type="reset"]:hover {
+  background-color: rgba(83, 4, 28, 0.864);
+  color: #ffffff;
+}
